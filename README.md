@@ -8,4 +8,4 @@ El objetivo principal es distribuir de forma eficiente los espacios disponibles,
 - Que se respeten las estructuras organizativas de la Universidad.
 - Que se fomente la colaboración entre miembros del mismo equipo.
 - Que se maximice el uso de escritorios disponibles de forma justa y planificada.
->>>>>>> 82cf8359c17aa0c79bc0bbe4a2ce205b582fa6bb
+
