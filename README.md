@@ -1,6 +1,6 @@
 # Challenge_ASOCIO25
-
 # Asignación Óptima de Puestos en un Esquema Híbrido de Trabajo
+
 
 Este proyecto aborda un problema real de optimización enfrentado por la Dirección de Planeación y Desarrollo Institucional de una universidad colombiana. A través de técnicas de programación matemática, se construye una herramienta de apoyo a la toma de decisiones que permite asignar, de forma eficiente y flexible, puestos de trabajo en modalidad híbrida, considerando tanto las restricciones operativas como las preferencias individuales de los colaboradores.
 
