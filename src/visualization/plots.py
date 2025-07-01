@@ -4,10 +4,9 @@ import matplotlib.pyplot as plt
 
 def plot_heatmap_uso(vars, data):
     x = vars['x']
-    DesksZ = vars['DesksZ']
-    E = vars['E']
-    D = vars['D']
     S = vars['S']
+    D = vars['D']
+    E = vars['E']
     DesksE = vars['DesksE']
 
     usage_matrix = pd.DataFrame(0, index=D, columns=S)
@@ -19,7 +18,7 @@ def plot_heatmap_uso(vars, data):
 
     plt.figure(figsize=(12, 6))
     sns.heatmap(usage_matrix, annot=True, cmap="YlGnBu", cbar_kws={'label': 'Empleados asignados'})
-    plt.title("🔲 Uso de escritorios por día")
+    plt.title("Uso de escritorios por día")
     plt.xlabel("Día")
     plt.ylabel("Escritorio")
     plt.tight_layout()
@@ -29,7 +28,7 @@ def plot_asignaciones_gantt(vars, data):
     x = vars['x']
     DesksZ = vars['DesksZ']
     E = vars['E']
-    D = vars['D']
+    D = vars['D'] # Asegúrate de que D esté definido o se use de alguna parte, si es necesario. Si no, quítalo.
     S = vars['S']
     DesksE = vars['DesksE']
 
@@ -47,7 +46,7 @@ def plot_asignaciones_gantt(vars, data):
 
     plt.figure(figsize=(12, len(E) * 0.4))
     sns.scatterplot(data=df_gantt, x="Día", y="Empleado", hue="Zona", style="Escritorio", s=100)
-    plt.title("📅 Asignaciones por Empleado (día, escritorio y zona)")
+    plt.title("Asignaciones por Empleado (día, escritorio y zona)")
     plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
     plt.tight_layout()
     plt.show()

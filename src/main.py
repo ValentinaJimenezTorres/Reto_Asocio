@@ -9,19 +9,19 @@ def main():
     instance_path = "data/instances/instance1.json"
 
     if not os.path.exists(instance_path):
-        print(f"❌ No se encontró la instancia: {instance_path}")
+        print(f"No se encontró la instancia: {instance_path}")
         return
 
-    print("📥 Cargando instancia...")
+    print("Cargando instancia...")
     data = load_instance(instance_path)
 
-    print("⚙️ Resolviendo modelo de optimización...")
+    print("Resolviendo modelo de optimización...")
     model, variables = solve_optimization(data)
 
-    print("📊 Evaluando resultados...")
+    print("Evaluando resultados...")
     evaluar_resultados(variables, data)
 
-    print("📈 Generando visualizaciones...")
+    print("Generando visualizaciones...")
     plot_heatmap_uso(variables, data)
     plot_asignaciones_gantt(variables, data)
 

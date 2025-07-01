@@ -51,9 +51,9 @@ def evaluar_resultados(vars, data):
                 if len(zonas_activas) == 1:
                     grupos_con_unica_zona += 1
 
-    print(f"% días asignados preferidos: {100 * preferidos_totales / asignaciones_totales:.2f}%")
-    print(f"% empleados con todos los días preferidos: {100 * empleados_completamente_satisfechos / len(E):.2f}%")
-    print(f"% empleados con mismo escritorio todos los días: {100 * empleados_mismo_escritorio / len(E):.2f}%")
+    print(f"Porcentaje de días asignados preferidos: {100 * preferidos_totales / asignaciones_totales:.2f}%")
+    print(f"Porcentaje de empleados con todos los días preferidos: {100 * empleados_completamente_satisfechos / len(E):.2f}%")
+    print(f"Porcentaje de empleados con mismo escritorio todos los días: {100 * empleados_mismo_escritorio / len(E):.2f}%")
     promedio_uso = sum(uso_diario.values()) / len(S)
     print(f"Uso promedio de escritorios por día: {promedio_uso:.2f} escritorios")
-    print(f"% reuniones de grupo con todos en una sola zona: {100 * grupos_con_unica_zona / len(G):.2f}%")
+    print(f"Porcentaje de reuniones de grupo con todos en una sola zona: {100 * grupos_con_unica_zona / len(G):.2f}%")
