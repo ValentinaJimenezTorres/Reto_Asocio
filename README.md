@@ -38,3 +38,7 @@ Se modeló el problema como un **programa entero mixto (MIP)** usando `PuLP` en 
 Se implementó un preprocesamiento de datos flexible y la solución es escalable a diferentes instancias.
 
 ---
+
+## Autores
+
+Fernando Piñeres, Juan Camilo Henao, Valentina Jiménez
